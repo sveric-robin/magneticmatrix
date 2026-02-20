@@ -2286,6 +2286,12 @@
 		(color 0 0 0 0)
 		(uuid "bfdf699c-f5b3-4929-9442-2a3fa56c4735")
 	)
+	(junction
+		(at 165.1 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6c02621-b228-4f3f-b6a2-519e7ba4e8fa")
+	)
 	(wire
 		(pts
 			(xy 160.02 59.69) (xy 160.02 52.07)
@@ -2388,6 +2394,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 85.09) (xy 173.99 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62bcad1d-a0d4-4d0b-9771-fd886ececb75")
+	)
+	(wire
+		(pts
 			(xy 68.58 33.02) (xy 71.12 33.02)
 		)
 		(stroke
@@ -2428,6 +2444,26 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 85.09) (xy 165.1 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96310293-018a-44c7-87b9-f9720966d9c7")
+	)
+	(wire
+		(pts
+			(xy 165.1 86.36) (xy 165.1 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a048ace8-bf9b-4dd2-95e4-0d048612dedc")
+	)
+	(wire
+		(pts
 			(xy 167.64 99.06) (xy 171.45 99.06)
 		)
 		(stroke
@@ -2465,6 +2501,16 @@
 			(type default)
 		)
 		(uuid "c2656abd-9051-41b6-b83e-ae9c889dfe3f")
+	)
+	(wire
+		(pts
+			(xy 173.99 85.09) (xy 173.99 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6d8306b-5c82-410e-972b-428147d64460")
 	)
 	(wire
 		(pts
@@ -2970,6 +3016,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 172.72 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bf598c8-369a-4896-b612-4bc2175ec50f")
+		(property "Reference" "#PWR06"
+			(at 172.72 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.72 91.948 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "245cb439-d447-44b7-819c-3f3b52d87f87")
+		)
+		(instances
+			(project "magneticmatrix"
+				(path "/860504d8-3138-468b-8439-ff428c9ca2aa"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 160.02 95.25 180)
 		(unit 1)
@@ -3392,6 +3504,80 @@
 			(project "magneticmatrix"
 				(path "/860504d8-3138-468b-8439-ff428c9ca2aa"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BZX84Cxx")
+		(at 168.91 87.63 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99be7047-ea15-40c2-bc3d-9173d8dd9c85")
+		(property "Reference" "D5"
+			(at 172.974 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BZX84Cxx"
+			(at 174.244 93.218 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf"
+			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "300mW Zener Diode, SOT-23"
+			(at 168.91 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aebeda39-ff5a-4299-a31d-860f9ca3ba1f")
+		)
+		(pin "3"
+			(uuid "8578e9c3-3881-4519-b76c-16ee5a946268")
+		)
+		(pin "1"
+			(uuid "786612b1-c8bc-43ea-8f80-883aa5a54b03")
+		)
+		(instances
+			(project "magneticmatrix"
+				(path "/860504d8-3138-468b-8439-ff428c9ca2aa"
+					(reference "D5")
 					(unit 1)
 				)
 			)
